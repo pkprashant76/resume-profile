@@ -1,0 +1,382 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, Sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+.container1 {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.container1 .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 4s ease;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  overflow: hidden;
+}
+.container1 .layer > div.text {
+  display: block;
+  text-align: right;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 36px;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.5s linear, -webkit-transform 4s ease;
+  transition: transform 4s ease, opacity 1.5s linear;
+  transition: transform 4s ease, opacity 1.5s linear, -webkit-transform 4s ease;
+}
+.container1 .layer > div.text > div.pad {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.container1 .layer > div.text > div.flex-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container1 .layer > div.text > div.flex-container >  div.box{
+   width: 50%;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 23px;
+}
+.container1 .layer.sunset {
+  background: white;
+  opacity: 1;
+  transition: background 0.5s;
+}
+.container1:hover .layer.sunset {
+  background: grey;
+}
+.container1 .layer.sunset > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1%;
+}
+.container1 .layer.nighttime {
+  background: black;
+  opacity: 0;
+  color: white;
+}
+.container1 .layer.nighttime > div {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+.container1.night .layer:nth-child(2) {
+  opacity: 0;
+}
+.container1.night .layer:nth-child(2) > div {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+.container1.night .layer:nth-child(3) {
+  opacity: 0.8;
+}
+.container1.night .layer:nth-child(3) > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+.container2 {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.container2 .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 4s ease;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  overflow: hidden;
+}
+.container2 .layer > div.text {
+  display: block;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 36px;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.5s linear, -webkit-transform 4s ease;
+  transition: transform 4s ease, opacity 1.5s linear;
+  transition: transform 4s ease, opacity 1.5s linear, -webkit-transform 4s ease;
+}
+.container2 .layer > div.text > div.pad {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.container2 .layer > div.text > div.flex-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container2 .layer > div.text > div.flex-container >  div.box{
+   width: 50%;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 23px;
+}
+.container2 .layer.sunset {
+  background: white;
+  opacity: 1;
+  transition: background 0.5s;
+}
+.container2:hover .layer.sunset {
+  background: grey;
+}
+.container2 .layer.sunset > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1%;
+}
+.container2 .layer.nighttime {
+  background: black;
+  opacity: 0;
+  color: white;
+}
+.container2 .layer.nighttime > div {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+.container2.night .layer:nth-child(2) {
+  opacity: 0;
+}
+.container2.night .layer:nth-child(2) > div {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+.container2.night .layer:nth-child(3) {
+  opacity: 0.8;
+}
+.container2.night .layer:nth-child(3) > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+.container3 {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  background: white;
+  position: relative;
+  cursor: pointer;
+}
+.container3 .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 4s ease;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  overflow: hidden;
+}
+.container3 .layer > div.text {
+  display: block;
+  text-align: right;
+  font-size: 36px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 36px;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.5s linear, -webkit-transform 4s ease;
+  transition: transform 4s ease, opacity 1.5s linear;
+  transition: transform 4s ease, opacity 1.5s linear, -webkit-transform 4s ease;
+}
+.container3 .layer > div.text > div.pad {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.container3 .layer > div.text > div.flex-container{
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+.container3 .layer > div.text > div.flex-container >  div.box{
+   width: 50%;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 23px;
+}
+.container3 .layer.sunset {
+  background: white;
+  opacity: 1;
+  transition: background 0.5s;
+}
+.container3:hover .layer.sunset {
+  background: grey;
+}
+.container3 .layer.sunset > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+.container3 .layer.nighttime {
+  background: black;
+  opacity: 0;
+  color: white;
+}
+.container3 .layer.nighttime > div {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+.container3.night .layer:nth-child(2) {
+  opacity: 0;
+}
+.container3.night .layer:nth-child(2) > div {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+.container3.night .layer:nth-child(3) {
+  opacity: 0.8;
+}
+.container3.night .layer:nth-child(3) > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.container4 {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  background: white;
+  position: relative;
+  cursor: pointer;
+}
+.container4 .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 4s ease;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  overflow: hidden;
+}
+.container4 .layer > div.text {
+  display: block;
+  text-align: left;
+  font-size: 36px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 36px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1.5s linear, -webkit-transform 4s ease;
+  transition: transform 4s ease, opacity 1.5s linear;
+  transition: transform 4s ease, opacity 1.5s linear, -webkit-transform 4s ease;
+}
+.container4 .layer > div.text > div.pad {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.container4 .layer > div.text > div.flex-container{
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+.container4 .layer > div.text > div.flex-container >  div.box{
+   width: 50%;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 23px;
+}
+.container4 .layer.sunset {
+  background: white;
+  opacity: 1;
+  transition: background 0.5s;
+}
+.container4:hover .layer.sunset {
+  background: grey;
+}
+.container4 .layer.sunset > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+.container4 .layer.nighttime {
+  background: black;
+  opacity: 0;
+  color: white;
+}
+.container4 .layer.nighttime > div {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+.container4.night .layer:nth-child(2) {
+  opacity: 0;
+}
+.container4.night .layer:nth-child(2) > div {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+.container4.night .layer:nth-child(3) {
+  opacity: 0.8;
+}
+.container4.night .layer:nth-child(3) > div {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}

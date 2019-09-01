@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Josefin+Sans|Lobster|Pacifico|Shadows+Into+Light|Sofia');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --anton: "Anton", cursive;
+    --Gugi: "Gugi", cursive;
+    --Josefin: "Josefin+Sans", cursive;
+    --Lobster: "Lobster",cursive;
+    --Pacifico:"Pacifico",cursive;
+    --Shadows:"Shadows+Into+Light",cursive;
+    --Sofia:"Sofia",cursive;
+    --bggradient1: linear-gradient(to bottom, rgb(221, 148, 12), rgb(255, 123, 0));
+    --light-orange: rgb(240, 240, 240);
+}
+header .container-fluid{
+    background: var(--light-orange);
+}
+.header a.navbar-brand{
+    padding-left: 10vmin;
+    font-family: var(--Pacifico);
+    font-size: 1.4em;
+    color: black;
+}
+.header .container-fluid .navbar.navbar-expand-lg .collapse.navbar-collapse .navbar-nav .nav-item a{
+    font-family: Arial, Helvetica, sans-serif; 
+    color:black;
+}
+.header .container-fluid .navbar.navbar-expand-lg .collapse.navbar-collapse .navbar-nav .nav-item a:hover{
+    font-size: 1em;
+    box-shadow:  0px 25px 42px rgba(3, 2, 1, 0.1);
+    border-radius: 0.4em;
+    width: 100%;
+    text-align: center;
+    background: rgb(34, 33, 33);
+    color: white;
+}
+header .nav-item{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    padding-right: 3em;
+}
+header .nav-item a .btn.btn-dark{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border-end-start-radius: 10vmin;
+    background: rgb(44, 43, 43);
+    color: white;
+}
+header .nav-item a .btn.btn-dark:hover{
+    background: white;
+    color: black;
+    width: 20vmin;
+    text-align: center;
+}
+.section-1{
+    width: 100%;
+    height: 90vmin;
+    background: url("assets/DSC_0428.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+
+}
+.section-1 .spesificPropertiesDiv{
+    display: block;
+    position: relative; 
+    left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 6000;
+    text-align: center;
+}
+.section-1 .content {
+    padding-top: 25vmin;
+    padding-left: 20vmin;
+    height: 100%;
+    width: 100%;
+}
+.section-1 .content .row .col-md-6>h1{
+    font-size: 8vmin;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.section-1 .content .row .col-md-6>h6{
+    font-size: 3vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+}
+.section-1 .content .row .col-md-6>p{
+    padding: 3vmin 0 3vmin 0;
+    font-size: 3vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: white;
+}
+/*section-2*/
+.section-2{
+    /*background: var(--bggradient3);*/
+    width: 100%;
+    padding: 20vmin 0;
+}
+.section-2 .row .col-md-6 .me img{
+    width: 120%;
+    /*opacity: 0.9;*/
+    border-radius: 0.2em;
+    box-shadow: 0px 25px 42px rgba(3, 2, 1, 0.7);
+}
+.section-2 .row .col-md-6 .panel{
+    position: absolute;
+    top: 4vmin;
+    background: var(--light-orange);
+    left: 5vmin;
+    padding: 5vmin 5vmin 5vmin 5vmin;
+    border-radius: 3px;
+    font-family: var(--Gugi);
+    z-index: 1;
+}
+.section-2 .row .col-md-6 .panel>h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+.section-2 .row .col-md-6 .panel>p{
+    font-size: 5em;
+    text-align: justify;
+
+}
+/*footer*/
+footer{
+    margin-top: 20vmin;
+    background: var(--light-orange);
+}
+
+footer .row .col-md-4{
+    padding: 5%;
+}
+footer .row .col-md-4 .contact>h2{
+    padding-bottom: 5vmin;
+}
+footer .row .col-md-4 .contact>p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .row .col-md-4 .box{
+    padding-top: 20px;
+    position: absolute;
+}
+
+footer .row .col-md-4 h2{
+    text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+footer .row .col-md-4  input.form-control.form-control-sm{
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+    width: 300px;
+    border-radius: 5px;
+    transition: 0.25s;
+    box-shadow:  0px 25px 42px rgba(3, 2, 1, 0.1);
+}
+footer .row .col-md-4  input.form-control.form-control-sm:focus{
+    width: 350px;
+    border-color: black;
+}
+
+footer .row .col-md-4  textarea.form-control{
+    resize: none;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow:  0px 10px 42px rgba(3, 2, 1, 0.1);
+}
+footer .row .col-md-4  input.btn.btn-dark{
+    margin-top: 30px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+footer .row .col-md-4  input.btn.btn-dark:hover{
+    background: white;
+    color: black;
+}
+footer .row .col-md-4 .follow{
+    text-align: center;
+}
+footer .row .col-md-4 .icons{
+    padding-top: 20px;
+}
+footer .row .col-md-4 .icons a{
+    color: black;
+    padding-right: 10px;
+}
+
+
+.button {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+    background:-moz-linear-gradient(top, #000000 5%, #000000 100%);
+    background:-webkit-linear-gradient(top, #000000 5%, #000000 100%);
+    background:-o-linear-gradient(top, #000000 5%, #000000 100%);
+    background:-ms-linear-gradient(top, #000000 5%, #000000 100%);
+    background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0);
+    background-color:#000000;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+    border:2px solid #333029;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Georgia;
+    font-size: 22px;
+    font-weight:bold;
+    padding:20px 50px;
+    text-decoration:none;
+}
+.button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+    background:-moz-linear-gradient(top, #000000 5%, #000000 100%);
+    background:-webkit-linear-gradient(top, #000000 5%, #000000 100%);
+    background:-o-linear-gradient(top, #000000 5%, #000000 100%);
+    background:-ms-linear-gradient(top, #000000 5%, #000000 100%);
+    background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0);
+    background-color:#000000;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
